@@ -57,6 +57,7 @@ function Lauange(x)
     var englishText = document.getElementById("EnglishText");
     var swedishText = document.getElementById("SwedishText");
     var germanText = document.getElementById("GermanText");
+    var hereTxt = document.getElementById("hereTxt");
 
     if(x == "Swedish")
     {
@@ -66,6 +67,8 @@ function Lauange(x)
       germanText.innerHTML = "Tyska";
       document.querySelector('.GameText').textContent = "Spelar";
       document.querySelector('.CacText').textContent = "Mini";
+      hereTxt.innerHTML = "Besök min kanal";
+
 
     }else if(x == "English")
     {
@@ -75,6 +78,7 @@ function Lauange(x)
       germanText.innerHTML = "German";
       document.querySelector('.GameText').textContent = "Games";
       document.querySelector('.CacText').textContent = "Cac";
+            hereTxt.innerHTML = "Visit my channel";
 
     }else if(x == "German")
     {     
@@ -85,6 +89,8 @@ function Lauange(x)
         englishText.innerHTML = "Englisch";
       swedishText.innerHTML = "Schwedisch";
       germanText.innerHTML = "Deutsch";
+         hereTxt.innerHTML = "besuche meinen kanal";
+
     }
    
 }
@@ -122,11 +128,10 @@ function Anime()
     
     <center>
         <div id="DIVH2">
-           <a id="Link"href="https://www.youtube.com/watch?v=nqNwvLO6uCg"class="ChangeSize">Visit my channel</a>
+           <a id="Link"href="https://www.youtube.com/watch?v=nqNwvLO6uCg"class="ChangeSize" id="hereTxt">Visit my channel</a>
            <br>
             <br>
             <br>
-            <a class="ChangeSize">All the edits is made by me enjoy!</a> 
 
         </div>
        
