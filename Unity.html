@@ -1,0 +1,138 @@
+<html>
+<script>
+  function Anime()
+   {
+    window.location = "index.html";
+   } 
+  
+   function School()
+   {
+    window.location = "School.html";
+   } 
+   function AbdullahHamdan()
+   {
+    window.location = "AbdullHamdan.html";
+   } 
+   function Game()
+   {
+    window.location = "Game.html";
+   }
+   
+
+function Cac()
+   {
+    window.location = "Caclutor.html";
+   } 
+   function UpdateTheDate() {
+       setInterval(displaydate,100);
+    }
+function displaydate() {
+    var x = new Date();
+    var y = x.toLocaleString();
+    //var y = x.toLocaleDateString();
+    //var y = x.toLocaleTimeString();
+
+
+    document.getElementById("Date").innerHTML = y;
+}
+function Download()
+{
+    window.location = "Download.html";
+}
+function Lauange(x)
+{
+    var UnityHubText = document.getElementById("UnityHubText");
+    var UnityEditorText = document.getElementById("UnityEditorText");
+    var englishText = document.getElementById("EnglishText");
+    var swedishText = document.getElementById("SwedishText");
+    var germanText = document.getElementById("GermanText");
+    var linkToDownloadText = document.getElementById("Link");
+    var UnityEditorTextTitle = document.getElementById("UnityEditorTextTitle");
+    if(x == "Swedish")
+    {
+      englishText.innerHTML = "Engelska";
+      swedishText.innerHTML = "Svenska";
+      germanText.innerHTML = "Tyska";
+      document.querySelector('.GameText').textContent = "Spelar";
+      document.querySelector('.CacText').textContent = "Mini";
+      linkToDownloadText.innerHTML = "Klick mig för att ladda ner Unity Hub";
+      UnityEditorText.innerHTML = " Unity Editor finns det många fönster. Det finns Console, Animator, Game och mer. Du kan anpassa din enhetsredigeringslayout om du vill. I unity Editor kan du göra partiklar med hjälp av unity partikelsystem. De flesta spelutvecklare använder Visual Studio som en kodningsprogramvara. Du måste lära dig csharp för att använda Unity-motorn. Om du vill lära dig unity csharp måste du kolla in "
+        UnityEditorTextTitle.innerHTML = "Unity Editor";
+        document.querySelector('.SecretText').textContent = "Hemlig"; 
+
+        UnityHubText.innerHTML = "Unity Hub är där du skapar och laddar upp ditt projekt. Du kan skapa ett 2D-spel eller ett 3D-spel. Du kan välja vilken enhetsversion du vill ha. Om du vill göra ett Ios-spel måste du ladda ner Ios till din Unity-version. Om du vill göra ett spel för andra enheter, förvänta dig för Windows, då måste du ladda ner dem till Unity-versionen."
+    }else if(x == "English")
+    {
+        englishText.innerHTML = "English";
+      swedishText.innerHTML = "Swedish";
+      germanText.innerHTML = "German";
+      document.querySelector('.GameText').textContent = "Games";
+      document.querySelector('.CacText').textContent = "Cac";
+      linkToDownloadText.innerHTML = "Click me to download Unity Hub";
+      UnityEditorText.innerHTML = "Inside the unity Editor there is many windows. There is Console, Animator, Game and more. You can customize you unity editor layout if you want. In unity Editor you can make particles using unity particle system. Most gamedeveloper uses visual studio as a coding software.You need to learn csharp to use the unity engine. If you want to learn unity csharp then you need to check out"
+        UnityEditorTextTitle.innerHTML = "Unity Editor";
+        document.querySelector('.SecretText').textContent = "Secret"; 
+
+        UnityHubText.innerHTML = "Unity Hub is where you create and upload your project. You can create a 2D game or a 3D game. You can choose which unity version you want to have. If you want to make an Ios game then you need to download Ios to your unity version. If you want to make a game for other devices, expect for windows then you need to download them to the unity version."
+    }else if(x == "German")
+    {
+        document.querySelector('.GameText').textContent = "Spiele";
+      document.querySelector('.CacText').textContent = "Tasch";
+        englishText.innerHTML = "Englisch";
+      swedishText.innerHTML = "Schwedisch";
+      germanText.innerHTML = "Deutsch";
+      linkToDownloadText.innerHTML = "Klicken Sie auf mich, um Unity Hub herunterzuladen";
+      UnityEditorText.innerHTML = "Im Unity-Editor gibt es viele Fenster. Es gibt Konsole, Animator, Spiel und mehr. Sie können das Layout Ihres Unity-Editors anpassen, wenn Sie möchten. Im Unity-Editor können Sie Partikel mit dem Unity-Partikelsystem erstellen. Die meisten Spieleentwickler verwenden Visual Studio als Programmiersoftware. Sie müssen csharp lernen, um die Unity-Engine zu verwenden. Wenn Sie Unity Csharp lernen möchten, müssen Sie dies überprüfen "
+        UnityEditorTextTitle.innerHTML = "Unity Editor";
+        document.querySelector('.SecretText').textContent = "Geheim"; 
+        UnityHubText.innerHTML = "Unity Hub ist der Ort, an dem Sie Ihr Projekt erstellen und hochladen. Sie können ein 2D-Spiel oder ein 3D-Spiel erstellen. Sie können wählen, welche Unity-Version Sie haben möchten. Wenn Sie ein Ios-Spiel erstellen möchten, müssen Sie Ios auf Ihre Unity-Version herunterladen. Wenn Sie ein Spiel für andere Geräte erstellen möchten, erwarten Sie für Windows, dass Sie sie auf die Unity-Version herunterladen müssen."
+    }
+}
+</script>
+<head>
+    
+</head>
+<body >
+  
+        
+    <body id = "Body" onload="UpdateTheDate()">
+        <div id= "DIV">
+            <a  class="ChangeSize" id = "AbdullahHamdan"onclick ="AbdullahHamdan()"onmouseover="ChangeHoverColortext(this)" onmouseleave="normaltext(this)">Abdullah Hamdan</a>  
+            <button id = "Button"onclick="Anime()"onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Anime</button>
+            <button class="GameText" id = "Button"onclick="Game()"onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Games</button>
+            <button class = "SecretText"id = "Button"onclick="Download()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Secret</button>
+
+            <button class="CacText" id = "Button"onclick="Cac()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Cac</button>
+            <select id="Lauange" style="color: snow; background-color: black;" onchange="Lauange(this.value)">
+                <option value="English"id="EnglishText">English</option>
+                <option value="Swedish"id="SwedishText">Swedish</option>
+                <option value="German" id="GermanText">German</option>
+                </select>
+        </div>
+        
+        <marquee class="ChangeSize" style="color: rgb(255, 255, 255); " id="Date"></marquee>
+
+        <h1 style="color: rgb(205, 255, 67);">Unity Hub</h1>
+        <div id="Math">
+            <p  class="ChangeSize" style="color: rgb(255, 255, 255); " id="UnityEditorText"> Unity Hub is where you create and upload your project. You can create a 2D game or a 3D game. You can choose which unity version you want to have. If you want to make an Ios game then you need to download Ios to your unity version. If you want to make a game for other devices, expect for windows then you need to download them to the unity version. </p>
+
+        </div>
+        <img src="UnityHub.png" style="height: 30%;">
+        <a  class="ChangeSize" style="color: rgb(255, 166, 0);" href="https://unity3d.com/get-unity/download " id="Link">Click me to download Unity Hub</a>
+        <hr>
+        <h1  class="ChangeSize" style="color: rgb(205, 255, 67);" id="UnityEditorTextTitle">Unity Editor</h1>
+        <div id="Math">
+            <p  class="ChangeSize" style="color: rgb(255, 255, 255); " id="UnityEditorText"> In unity Editor there is many windows. There is Console, Animator, Game and more. You can customize you unity editor layout if you want. In unity Editor you can make particles using unity particle system. Most gamedeveloper uses visual studio as a coding software.You need to learn csharp to use the unity engine. If you want to learn unity csharp then you need to check out </p>
+            <a id="Link" class="ChangeSize"  style = "color: rgb(255, 166, 0);"href="https://www.youtube.com/c/CodeMonkeyUnity">Code monkey</a><a class="ChangeSize" style = "color: rgb(255, 166, 0);" href="https://www.youtube.com/c/Brackeys" id="Link"> Brackeys <a class="ChangeSize" id="Link" style = "color: rgb(255, 166, 0);" href="https://www.youtube.com/c/unity"> Unity  <a class="ChangeSize" style = "color: rgb(255, 166, 0);" href="https://www.youtube.com/c/awesometuts" id="Link" > Awesome Tuts </a>
+        </div>
+        <img src="Unity.jpg" style="height: 23%;">
+       
+
+        <link rel="stylesheet"  href="Home.css">
+        
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,207 @@
+<html>
+<script>
+   function GoToZenoxEditsKakahsi()
+   {
+    window.location = "https://www.youtube.com/watch?v=b2rBpv-sbak";
+   }
+   function Tatkae()
+   {
+    window.location = "https://www.youtube.com/watch?v=rh89ZRK3UFI&list=PLhqWHc6eAoxztoo52olpchM6g2UwyG-xB&index=56";
+   } 
+   function Killua()
+   {
+    window.location = "https://www.youtube.com/watch?v=kTfKbR6q9t8&list=PLhqWHc6eAoxztoo52olpchM6g2UwyG-xB&index=57"
+   }
+
+   function Anime()
+   {
+    window.location = "index.html";
+   }
+   function AbdullahHamdan()
+   {
+    window.location = "AbdullHamdan.html";
+   } 
+   function Unity()
+   {
+    window.location = "Unity.html";
+   } 
+   function School()
+   {
+    window.location = "School.html";
+   } 
+   function Game()
+   {
+    window.location = "Game.html";
+   } 
+  
+
+function Add()
+{
+    
+    var resulttext = document.getElementById("ResultSum");
+    var number0 = parseFloat( document.getElementById("Num0Sum").value);
+    var number1 = parseFloat(document.getElementById("Num1Sum").value);
+    var result = number0 + number1;
+
+    resulttext.innerHTML = " = " + result;
+    
+    if(isNaN(result) == true)
+    {
+        alert("Write a number please");
+    }
+}
+function Div()
+{
+    
+    var resulttext = document.getElementById("ResultSum");
+    var number0 = parseFloat( document.getElementById("Num0Sum").value);
+    var number1 = parseFloat(document.getElementById("Num1Sum").value);
+    var result = number0 / number1;
+
+    resulttext.innerHTML = " = " + result;
+    
+    if(isNaN(result) == true)
+    {
+        alert("Write a number please");
+    }
+}
+function Multi()
+{
+    
+    var resulttext = document.getElementById("ResultSum");
+    var number0 = parseFloat( document.getElementById("Num0Sum").value);
+    var number1 = parseFloat(document.getElementById("Num1Sum").value);
+    var result = number0 * number1;
+
+    resulttext.innerHTML = " = " + result;
+    
+    if(isNaN(result) == true)
+    {
+        alert("Write a number please");
+    }
+}
+function Subtrahet()
+{
+    
+    var resulttext = document.getElementById("ResultSum");
+    var number0 = parseFloat( document.getElementById("Num0Sum").value);
+    var number1 = parseFloat(document.getElementById("Num1Sum").value);
+    var result = number0 - number1;
+
+    resulttext.innerHTML = " = " + "" + "" + result;
+    
+    if(isNaN(result) == true)
+    {
+        alert("Write a number please");
+    }
+}
+function UpdateTheDate() {
+       setInterval(displaydate,100);
+    }
+function displaydate() {
+    var x = new Date();
+    var y = x.toLocaleString();
+    //var y = x.toLocaleDateString();
+    //var y = x.toLocaleTimeString();
+
+
+    document.getElementById("Date").innerHTML = y;
+}
+function Download()
+{
+    window.location = "Download.html";
+}
+function Lauange(x)
+{
+    var englishText = document.getElementById("EnglishText");
+    var swedishText = document.getElementById("SwedishText");
+    var germanText = document.getElementById("GermanText");
+    
+    if(x == "Swedish")
+    {
+      englishText.innerHTML = "Engelska";
+      swedishText.innerHTML = "Svenska";
+      germanText.innerHTML = "Tyska";
+      document.querySelector('.GameText').textContent = "Spelar";
+      document.querySelector(".DivideButton").textContent = "Dela";
+      document.querySelector(".MultipleButton").textContent = "Multiplicera";
+      document.querySelector(".SubtractButton").textContent = "Minus";
+      document.querySelector(".AddButton").textContent = "Addera";
+      document.querySelector('.SecretText').textContent = "Hemlig"; 
+
+    }else if(x == "English")
+    {
+        englishText.innerHTML = "English";
+      swedishText.innerHTML = "Swedish";
+      germanText.innerHTML = "German";
+      document.querySelector('.GameText').textContent = "Games";
+      document.querySelector(".DivideButton").textContent = "Divide";
+      document.querySelector(".MultipleButton").textContent = "Multiply";
+      document.querySelector(".SubtractButton").textContent = "Subtract";
+      document.querySelector('.SecretText').textContent = "Secret"; 
+
+      document.querySelector(".AddButton").textContent = "Add";
+    }else if(x == "German")
+    {
+
+        document.querySelector('.GameText').textContent = "Spiele";
+        englishText.innerHTML = "Englisch";
+      swedishText.innerHTML = "Schwedisch";
+      germanText.innerHTML = "Deutsch";
+      document.querySelector(".DivideButton").textContent = "Teilen";
+      document.querySelector(".MultipleButton").textContent = "Multiplizieren";
+      document.querySelector(".SubtractButton").textContent = "Subtrahieren";
+      document.querySelector('.SecretText').textContent = "Geheim"; 
+
+      document.querySelector(".AddButton").textContent = "Addieren";
+    }
+}
+</script>
+<head>
+    
+</head>
+<body id = "Body" onload="UpdateTheDate()">
+    <div id= "DIV" >
+        <a  class="ChangeSize" id = "AbdullahHamdan" onclick="AbdullahHamdan()" onmouseover="ChangeHoverColortext(this)" onmouseleave="normaltext(this)">Abdullah Hamdan</a>  
+        <button  id = "Button"onclick="Unity()" onmouseover=" ChangeHoverFormRightMenu(this)" onmouseleave="normalHoverFormRightMenu(this)">Unity</button>
+        <button class = "SecretText"id = "Button"onclick="Download()" onmouseover=" ChangeHoverFormRightMenu(this)" onmouseleave="normalHoverFormRightMenu(this)">Secret</button>
+
+        <button class="GameText" id = "Button"onclick="Game()" onmouseover=" ChangeHoverFormRightMenu(this)" onmouseleave="normalHoverFormRightMenu(this)">Games</button>
+        <button id = "Button"onclick="Anime()"onmouseover=" ChangeHoverFormRightMenu(this)" onmouseleave="normalHoverFormRightMenu(this)">Anime</button>
+        <select id="Lauange" style="color: snow; background-color: black;" onchange="Lauange(this.value)">
+            <option value="English"id="EnglishText">English</option>
+            <option value="Swedish"id="SwedishText">Swedish</option>
+            <option value="German" id="GermanText">German</option>
+            </select>
+       
+        
+    </div>
+    <marquee class="ChangeSize" style="color: rgb(255, 255, 255); " id="Date"></marquee>
+
+    <br>
+    <br>
+    <br>
+    
+    <div style="margin-top: 10cm;">
+        <center>
+            <input   type="number" id="Num0Sum">
+            <button  style="height: 200px; width: 200px;" id = "Button" onmouseover=" ChangeHoverForm(this)" onmouseleave="normalHoverForm(this)" onclick="Div()" class="DivideButton">Divide</button> 
+            <button style="height: 200px; width: 200px;"id = "Button" onmouseover=" ChangeHoverForm(this)" onmouseleave="normalHoverForm(this)" onclick="Multi()" class="MultipleButton">Multiply</button>
+            <button style="height: 200px; width: 200px;"id = "Button"onmouseover=" ChangeHoverForm(this)" onmouseleave="normalHoverForm(this)"onclick="Subtrahet()"class="SubtractButton">Subtract</button>
+            <button style="height: 200px; width: 200px;"id = "Button"onmouseover=" ChangeHoverForm(this)" onmouseleave="normalHoverForm(this)" onclick="Add()"class="AddButton">Add</button>
+            <input type="number" id="Num1Sum">
+            <b style="color: blueviolet;" id="ResultSum"> = </b>
+          </center>
+    </div>
+    
+
+    
+   
+<link rel="stylesheet"  href="Home.css">
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,129 @@
+<html>
+<script>
+  function Anime()
+   {
+    window.location = "index.html";
+   } 
+   function Unity()
+   {
+    window.location = "Unity.html";
+   } 
+   function School()
+   {
+    window.location = "School.html";
+   } 
+   function AbdullahHamdan()
+   {
+    window.location = "AbdullHamdan.html";
+   } 
+   function Game()
+   {
+    window.location = "Game.html";
+   }
+   
+   
+
+function Cac()
+   {
+    window.location = "Caclutor.html";
+   } 
+   function UpdateTheDate() {
+       setInterval(displaydate,100);
+    }
+function displaydate() {
+    var x = new Date();
+    var y = x.toLocaleString();
+    //var y = x.toLocaleDateString();
+    //var y = x.toLocaleTimeString();
+
+
+    document.getElementById("Date").innerHTML = y;
+}
+function Download()
+{
+    window.location = "Download.html";
+}
+function Cac()
+   {
+    window.location = "Caclutor.html";
+   } 
+function Lauange(x)
+{
+    var englishText = document.getElementById("EnglishText");
+    var swedishText = document.getElementById("SwedishText");
+    var germanText = document.getElementById("GermanText");
+    var madeByText = document.getElementById("MadeByText");
+    if(x == "Swedish")
+    {
+      englishText.innerHTML = "Engelska";
+      swedishText.innerHTML = "Svenska";
+      germanText.innerHTML = "Tyska";
+      document.querySelector('.GameText').textContent = "Spelar";
+      document.querySelector('.CacText').textContent = "Mini";
+      madeByText.innerHTML = "Tillverkad av";
+      document.querySelector('.SecretText').textContent = "Hemlig"; 
+
+    }else if(x == "English")
+    {
+        englishText.innerHTML = "English";
+      swedishText.innerHTML = "Swedish";
+      germanText.innerHTML = "German";
+      document.querySelector('.GameText').textContent = "Games";
+      document.querySelector('.CacText').textContent = "Cac";
+      madeByText.innerHTML = "Made by";
+      document.querySelector('.SecretText').textContent = "Secret"; 
+
+    }else if(x == "German")
+    {
+        document.querySelector('.GameText').textContent = "Spiele";
+      document.querySelector('.CacText').textContent = "Tasch";
+        englishText.innerHTML = "Englisch";
+      swedishText.innerHTML = "Schwedisch";
+      germanText.innerHTML = "Deutsch";
+      madeByText.innerHTML = "Hergestellt von";
+      document.querySelector('.SecretText').textContent = "Geheim";
+
+
+    }
+    
+}
+
+</script>
+<head>
+    
+</head>
+<body >
+  
+        
+    <body id = "Body" onload="UpdateTheDate()">
+        <div id= "DIV" >
+            <button  id = "Button"onclick="Unity()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Unity</button>
+            <button class="GameText" id = "Button"onclick="Game()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Games</button>
+            <button class = "SecretText"id = "Button"onclick="Download()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Secret</button>
+            <button class = "AnimeText"id = "Button"onclick="Anime()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Anime</button>
+
+            <button class = "CacText"id = "Button"onclick="Cac()" onmouseover=" ChangeHoverColor(this)" onmouseleave="normal(this)">Cac</button>
+            <select id="Lauange" style="color: snow; background-color: black;" onchange="Lauange(this.value)">
+                <option value="English"id="EnglishText">English</option>
+                <option value="Swedish"id="SwedishText">Swedish</option>
+                <option value="German" id="GermanText">German</option>
+                </select>
+        </div>
+        <marquee class="ChangeSize" style="color: rgb(255, 255, 255); " id="Date"></marquee>
+
+        <link rel="stylesheet"  href="Home.css">
+        <div style="margin-top: 7cm;">
+            
+          <center>
+            <h1  class="ChangeSizeMadeBy"  id="MadeByText" style="color: rgb(255, 255, 255); font-size: 5cm;">Made By</h1>
+            <p  class="ChangeSizeMadeByAbdullahHamdan" style="color: rgb(255, 189, 67); ;">Abdullah Hamdan</p>
+          </center>
+
+        </div>
+       
+</body>
+
+
+
+
+</html>
